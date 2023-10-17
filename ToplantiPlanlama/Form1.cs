@@ -29,8 +29,8 @@ namespace ToplantiPlanlama
         public void button2_Click(object sender, EventArgs e)
         {
             string dosyakonum = @"C:\Users\akeph\Documents\GitHub\ToplantiPlanlama\Kayit.txt";
-           
             
+
 
 
                 string Ad = textBox3.Text;
@@ -38,9 +38,9 @@ namespace ToplantiPlanlama
                 string Kullaniciadi = textBox5.Text;
                 string Sifre = textBox6.Text;
           
+            File.AppendAllText(dosyakonum, Ad + "\n" + Soyad + "\n" + Kullaniciadi + "\n" + Sifre +"\n");
+            
 
-            File.WriteAllText(dosyakonum, Ad + "\n" + Soyad + "\n" + Kullaniciadi + "\n" + Sifre+"\n");
-           
 
             //  grs.setAd(Ad);
             // grs.setSoyad(Soyad);
@@ -78,7 +78,11 @@ namespace ToplantiPlanlama
 
                 }
 
+                else
+                {
 
+                    MessageBox.Show("Hatalı giriş tekrar deneyiniz");
+                }
 
 
 
