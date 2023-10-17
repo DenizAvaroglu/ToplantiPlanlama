@@ -86,7 +86,7 @@
             this.label3.BackColor = System.Drawing.Color.Coral;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(95, 281);
+            this.label3.Location = new System.Drawing.Point(95, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 2;
@@ -118,9 +118,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(382, 471);
+            this.tabPage1.Size = new System.Drawing.Size(405, 471);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Giriş";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button1
             // 
@@ -151,7 +152,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(188, 284);
+            this.textBox2.Location = new System.Drawing.Point(201, 284);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(188, 22);
             this.textBox2.TabIndex = 4;
@@ -159,7 +160,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(188, 245);
+            this.textBox1.Location = new System.Drawing.Point(201, 249);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(188, 22);
             this.textBox1.TabIndex = 3;
