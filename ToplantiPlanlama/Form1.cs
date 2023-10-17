@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,44 +28,93 @@ namespace ToplantiPlanlama
 
         public void button2_Click(object sender, EventArgs e)
         {
-            string Ad=textBox3.Text;
-            string Soyad=textBox4.Text;
-            string Kullaniciadi=textBox5.Text;
-            string Sifre = textBox6.Text;
+            string dosyakonum = @"C:\Users\akeph\Documents\GitHub\ToplantiPlanlama\Kayit.txt";
+           
             
-            grs.setAd(Ad);
-            grs.setSoyad(Soyad);
-            grs.setKullaniciAdi(Kullaniciadi);
-            grs.setSifre(Sifre);
+
+
+                string Ad = textBox3.Text;
+                string Soyad = textBox4.Text;
+                string Kullaniciadi = textBox5.Text;
+                string Sifre = textBox6.Text;
+          
+
+            File.WriteAllText(dosyakonum, Ad + "\n" + Soyad + "\n" + Kullaniciadi + "\n" + Sifre+"\n");
+           
+
+            //  grs.setAd(Ad);
+            // grs.setSoyad(Soyad);
+            // grs.setKullaniciAdi(Kullaniciadi);
+            // grs.setSifre(Sifre);
 
 
             MessageBox.Show("Kaydınız Yapılmıştır");
-
+            
         }
 
         
 
         public void button1_Click(object sender, EventArgs e)
         {
-            string KADI = grs.GetKullaniciAdi();
-           string SFRE = grs.GetSifre();
 
+            string dosyakonum = @"C:\Users\akeph\Documents\GitHub\ToplantiPlanlama\Kayit.txt";
+            string[] data_= File.ReadAllLines(dosyakonum);
+            
 
-            if(KADI==textBox1.Text && SFRE == textBox2.Text)
+           string kullaniciadi=textBox1.Text;
+            string sifre = textBox2.Text;
+
+           
+            for(int i=2; i<data_.Length;i+=4)
             {
-                Toplanti toplanti = new Toplanti();
-                toplanti.Show();
+                if (data_[i] ==kullaniciadi && data_[i+1] ==sifre)
+                {
+
+                    Toplanti toplanti = new Toplanti();
+                     toplanti.Show();
+
+
+
+
+                }
+
+
+
+
 
 
             }
 
-          
-             else
-            {
-                MessageBox.Show("Hatalı Giriş Tekrar Deneyiniz");
+
+           
 
 
-            }
+
+
+
+
+
+            // string KADI = grs.GetKullaniciAdi();
+            //string SFRE = grs.GetSifre();
+
+
+            //if(KADI==textBox1.Text && SFRE == textBox2.Text)
+            //{
+            // Toplanti toplanti = new Toplanti();
+            // toplanti.Show();
+
+
+            // }
+
+
+            // else
+            // {
+            // MessageBox.Show("Hatalı Giriş Tekrar Deneyiniz");
+
+
+            // }
+
+
 
 
 
