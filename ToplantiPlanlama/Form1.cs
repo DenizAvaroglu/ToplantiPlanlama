@@ -8,21 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ToplantiPlanlama.Class;
+
 
 namespace ToplantiPlanlama
 {
     public partial class Form1 : Form
     {
-        Giris grs = new Giris();
-
 
         public Form1()
         {
 
             InitializeComponent();
-            Giris grs = new Giris();
-
+           
 
         }
 
@@ -78,19 +75,14 @@ namespace ToplantiPlanlama
 
                 }
 
-                else
-                {
-
-                    MessageBox.Show("Hatalı giriş tekrar deneyiniz");
-                }
-
+              
 
 
 
             }
+            
 
 
-           
 
 
 
@@ -131,6 +123,11 @@ namespace ToplantiPlanlama
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
