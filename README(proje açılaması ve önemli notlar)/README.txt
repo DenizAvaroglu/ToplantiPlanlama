@@ -10,6 +10,14 @@ diğer kullanıcılarda MÜSAİTLİK ZAMANI tablosunda ID atanmış toplantını
 bunun sonucundada ortak bir konuşma Alanı sağlanır kararlarştırmada yapılır 
 
 NOT:
-listeler ,zamanlar, mesajlar ve kişilerin bilgileri kalıcı olarak txt dosyalarında ayrı ayrı depolanır
+- listeler ,zamanlar, mesajlar ve kişilerin bilgileri kalıcı olarak txt dosyalarında ayrı ayrı depolanır
 klasör olarak ana koddan çalıştırılacaksa listeleme ile ilgili butonlar mesaJları güncelleme ve gönderme kayıt gibi butonların
 içindeki txt dosyaları bulmaları için konum verisi güncelleme isteye bilir
+
+- Google takvim durumunda ise internette baktığımda videoların 1,3,5,6... gibi eski yüklenme tarihleri 
+bulunup araştırmalardada kendim ve başka üniversitelerde bulunan kişilerede sorduğumda Google ın c# tan
+desteğini kaldırmış olabileceği yönünde araştırmalar sonucu ile bazı şeyler denenmiş google üzerinde sayfa açılıp hata alınıp kodu çalışmicak hale getirdiği için yorum
+satırı hakine getirip içinde bırakılmıştır doğrubir sonuca varılamadığından 
+bu durumu kullanıcının bir nebze işini kolaylaştırması için ek bir takvim ve ajanda misali bir ek 
+kod yapılmıştır proje içine
+

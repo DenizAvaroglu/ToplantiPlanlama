@@ -1,5 +1,4 @@
-﻿using DevExpress.DirectX.Common.DirectWrite;
-using DevExpress.XtraPrinting.BarCode;
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,26 +8,61 @@ using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DevExpress.Utils.Helpers;
+//using Google;
+//using Google.Apis.Auth.OAuth2;
+//using Google.Apis.Calendar.v3;
+//using Google.Apis.Services;
+//using Google.Apis.Calendar.v3.Data;
+//using Google.Apis.Util.Store;
+//using Google.Apis.Http;
 
 namespace ToplantiPlanlama
+
+
 {
     public partial class Toplanti : Form
     {
-
-
+       /* public IConfigurableHttpClientInitializer credential { get;  set; }
+        public CalendarService calendarService { get;  set; }
+       */
         public Toplanti()
         {
             InitializeComponent();
 
         }
-
+        private void btnAddToGoogleCalendar_Click(object sender, EventArgs e)
+        {
+            // Bu düğmeye tıklandığında yapılacak işlemleri burada kodlayabilirsiniz.
+            // Örneğin Google Takvim API'si ile ilgili işlemleri burada gerçekleştirebilirsiniz.
+        }
         public void Toplanti_Load(object sender, EventArgs e)
         {
 
+           /* // Google API kimlik doğrulama
+            string[] scopes = { CalendarService.Scope.Calendar };
+            string clientId = "327674132128";
+            string clientSecret = "solid-setup-403709";
+
+            credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                new ClientSecrets { ClientId = clientId, ClientSecret = clientSecret },
+                scopes,
+                "Akefalos",
+                CancellationToken.None,
+                new FileDataStore("Calendar.API.Store")).Result;
+
+            // Google Takvim API hizmetini başlat
+            calendarService = new CalendarService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = "Toplanti",
+            });*/
+        
         }
+       
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
@@ -301,6 +335,68 @@ namespace ToplantiPlanlama
 
             }
         }
+
+        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void button14_Click(object sender, EventArgs e)
+        {
+            string kayit = @"C:\Users\akeph\Documents\GitHub\ToplantiPlanlama\Toplantilarim.txt";
+            DateTime Toplantı = dateTimePicker3.Value;
+            
+         
+
+            
+            File.AppendAllText(kayit,Toplantı+" :"+richTextBox2.Text+"\n");
+
+        }
+
+      
+        public void button15_Click(object sender, EventArgs e)
+        {
+            string kayit = @"C:\Users\akeph\Documents\GitHub\ToplantiPlanlama\Toplantilarim.txt";
+            File.ReadAllLines(kayit);
+
+            string[] mesaj = File.ReadAllLines(kayit);
+            for (int i = 1; i < mesaj.Length; i++)
+            {
+
+
+                listBox2.Items.Add(mesaj[i]);
+
+
+            }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+      /*  public void button16_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                string eventTitle = row.Cells["Title"].Value.ToString();
+                DateTime eventDate = Convert.ToDateTime(row.Cells["Date"].Value);
+
+                Event newEvent = new Event()
+                {
+                    Summary = eventTitle,
+                   
+                };
+
+                EventsResource.InsertRequest request = calendarService.Events.Insert(newEvent, "primary");
+                Event createdEvent = request.Execute();
+
+               
+                string eventLink = createdEvent.HtmlLink;
+                
+            }
+
+        }*/
     }
 }
 

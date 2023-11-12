@@ -37,7 +37,6 @@
             this.Saat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Not = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -59,6 +58,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -71,32 +72,44 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.AD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.ıd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.takvim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zaman = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.AD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Soyad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dateTimeOffsetEdit1 = new DevExpress.XtraEditors.DateTimeOffsetEdit();
+            this.dateTimeOffsetEdit2 = new DevExpress.XtraEditors.DateTimeOffsetEdit();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeOffsetEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeOffsetEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -178,34 +191,28 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "TOPLANTI LİSTELERİ";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(18, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(333, 52);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "EKLE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(18, 347);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(333, 52);
             this.button2.TabIndex = 3;
             this.button2.Text = "SİL";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(18, 405);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(333, 52);
             this.button3.TabIndex = 4;
             this.button3.Text = "GÜNCELLE";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBox1
@@ -329,14 +336,16 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(956, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(365, 793);
+            this.tabControl1.Size = new System.Drawing.Size(410, 793);
             this.tabControl1.TabIndex = 20;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.AntiqueWhite;
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Controls.Add(this.textBox4);
@@ -359,33 +368,39 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(357, 764);
+            this.tabPage1.Size = new System.Drawing.Size(402, 764);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Toplantı Oluşturma";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(18, 551);
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button8.Location = new System.Drawing.Point(18, 604);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(333, 52);
             this.button8.TabIndex = 20;
             this.button8.Text = "LİSTE KAYIT";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(18, 493);
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(18, 546);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(333, 52);
             this.button7.TabIndex = 19;
             this.button7.Text = "LİSTELE";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
             this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Controls.Add(this.button10);
             this.tabPage2.Controls.Add(this.button4);
@@ -402,29 +417,57 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(357, 764);
+            this.tabPage2.Size = new System.Drawing.Size(402, 764);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Toplantı Müsaitlik";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(37, 426);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(294, 52);
+            this.button9.TabIndex = 27;
+            this.button9.Text = "LİSTE KAYIT";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(37, 368);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(294, 52);
+            this.button10.TabIndex = 26;
+            this.button10.Text = "LİSTELE";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button4.Location = new System.Drawing.Point(35, 150);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(296, 52);
             this.button4.TabIndex = 23;
             this.button4.Text = "EKLE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(35, 208);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(296, 52);
             this.button5.TabIndex = 24;
             this.button5.Text = "SİL";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label13
@@ -438,12 +481,14 @@
             // 
             // button6
             // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(35, 266);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(296, 52);
             this.button6.TabIndex = 25;
             this.button6.Text = "GÜNCELLE";
-            this.button6.UseVisualStyleBackColor = true;
+            this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label12
@@ -505,6 +550,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.PeachPuff;
             this.tabPage3.Controls.Add(this.listBox1);
             this.tabPage3.Controls.Add(this.button13);
             this.tabPage3.Controls.Add(this.label15);
@@ -517,10 +563,202 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(357, 764);
+            this.tabPage3.Size = new System.Drawing.Size(402, 764);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mesaj";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(9, 353);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(342, 276);
+            this.listBox1.TabIndex = 36;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.MediumOrchid;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(6, 708);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(345, 48);
+            this.button13.TabIndex = 35;
+            this.button13.Text = "MESAJLARINI GÖSTER";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label15.Location = new System.Drawing.Point(12, 299);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(114, 23);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "AD SOYAD";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(12, 325);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(167, 22);
+            this.textBox7.TabIndex = 31;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(269, 629);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(88, 70);
+            this.button12.TabIndex = 30;
+            this.button12.Text = "GÖNDER";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(9, 629);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(258, 70);
+            this.richTextBox3.TabIndex = 29;
+            this.richTextBox3.Text = "";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label14.Location = new System.Drawing.Point(95, 14);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(166, 23);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "KİŞİ LİSTESİ";
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Silver;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(6, 238);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(351, 52);
+            this.button11.TabIndex = 27;
+            this.button11.Text = "LİSTELE";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.AD,
+            this.Soyad});
+            this.dataGridView3.Location = new System.Drawing.Point(6, 54);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(345, 178);
+            this.dataGridView3.TabIndex = 0;
+            // 
+            // AD
+            // 
+            this.AD.HeaderText = "AD";
+            this.AD.MinimumWidth = 6;
+            this.AD.Name = "AD";
+            this.AD.Width = 125;
+            // 
+            // Soyad
+            // 
+            this.Soyad.HeaderText = "SOYAD";
+            this.Soyad.MinimumWidth = 6;
+            this.Soyad.Name = "Soyad";
+            this.Soyad.Width = 125;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.LightCoral;
+            this.tabPage4.Controls.Add(this.dateTimePicker3);
+            this.tabPage4.Controls.Add(this.label17);
+            this.tabPage4.Controls.Add(this.button15);
+            this.tabPage4.Controls.Add(this.listBox2);
+            this.tabPage4.Controls.Add(this.button14);
+            this.tabPage4.Controls.Add(this.label16);
+            this.tabPage4.Controls.Add(this.richTextBox2);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(402, 764);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Takvim Ajanda";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(15, 7);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(361, 22);
+            this.dateTimePicker3.TabIndex = 8;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label17.Location = new System.Drawing.Point(3, 237);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(179, 23);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Toplantılarım";
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(7, 634);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(381, 54);
+            this.button15.TabIndex = 6;
+            this.button15.Text = "Listele";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(7, 272);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(381, 356);
+            this.listBox2.TabIndex = 5;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Aquamarine;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(15, 172);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(345, 42);
+            this.button14.TabIndex = 4;
+            this.button14.Text = "Kayıt";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label16.Location = new System.Drawing.Point(11, 44);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(192, 23);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Toplantı Notum";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(15, 70);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(345, 96);
+            this.richTextBox2.TabIndex = 2;
+            this.richTextBox2.Text = "";
             // 
             // label9
             // 
@@ -576,133 +814,48 @@
             this.zaman.Name = "zaman";
             this.zaman.Width = 125;
             // 
-            // button9
+            // dateTimeOffsetEdit1
             // 
-            this.button9.Location = new System.Drawing.Point(37, 426);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(294, 52);
-            this.button9.TabIndex = 27;
-            this.button9.Text = "LİSTE KAYIT";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.dateTimeOffsetEdit1.Location = new System.Drawing.Point(0, 0);
+            this.dateTimeOffsetEdit1.Name = "dateTimeOffsetEdit1";
             // 
-            // button10
             // 
-            this.button10.Location = new System.Drawing.Point(37, 368);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(294, 52);
-            this.button10.TabIndex = 26;
-            this.button10.Text = "LİSTELE";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // dataGridView3
+            this.dateTimeOffsetEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateTimeOffsetEdit1.Size = new System.Drawing.Size(125, 22);
+            this.dateTimeOffsetEdit1.TabIndex = 0;
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AD,
-            this.Soyad});
-            this.dataGridView3.Location = new System.Drawing.Point(6, 54);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(345, 178);
-            this.dataGridView3.TabIndex = 0;
+            // dateTimeOffsetEdit2
             // 
-            // AD
+            this.dateTimeOffsetEdit2.Location = new System.Drawing.Point(0, 0);
+            this.dateTimeOffsetEdit2.Name = "dateTimeOffsetEdit2";
             // 
-            this.AD.HeaderText = "AD";
-            this.AD.MinimumWidth = 6;
-            this.AD.Name = "AD";
-            this.AD.Width = 125;
             // 
-            // Soyad
             // 
-            this.Soyad.HeaderText = "SOYAD";
-            this.Soyad.MinimumWidth = 6;
-            this.Soyad.Name = "Soyad";
-            this.Soyad.Width = 125;
+            this.dateTimeOffsetEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateTimeOffsetEdit2.Size = new System.Drawing.Size(125, 22);
+            this.dateTimeOffsetEdit2.TabIndex = 0;
             // 
-            // button11
+            // button1
             // 
-            this.button11.Location = new System.Drawing.Point(6, 238);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(351, 52);
-            this.button11.TabIndex = 27;
-            this.button11.Text = "LİSTELE";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.Location = new System.Drawing.Point(95, 14);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(166, 23);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "KİŞİ LİSTESİ";
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.Location = new System.Drawing.Point(9, 629);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(258, 70);
-            this.richTextBox3.TabIndex = 29;
-            this.richTextBox3.Text = "";
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(269, 629);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(88, 70);
-            this.button12.TabIndex = 30;
-            this.button12.Text = "GÖNDER";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(12, 325);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 22);
-            this.textBox7.TabIndex = 31;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label15.Location = new System.Drawing.Point(12, 299);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(114, 23);
-            this.label15.TabIndex = 33;
-            this.label15.Text = "AD SOYAD";
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(6, 708);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(345, 48);
-            this.button13.TabIndex = 35;
-            this.button13.Text = "MESAJLARINI GÖSTER";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(9, 353);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(342, 276);
-            this.listBox1.TabIndex = 36;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(18, 289);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(333, 52);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "EKLE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Toplanti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1323, 816);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1378, 816);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tabControl1);
@@ -719,8 +872,12 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeOffsetEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateTimeOffsetEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,7 +887,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;
@@ -790,5 +946,16 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private DevExpress.XtraEditors.DateTimeOffsetEdit dateTimeOffsetEdit1;
+        private DevExpress.XtraEditors.DateTimeOffsetEdit dateTimeOffsetEdit2;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Button button1;
     }
 }
